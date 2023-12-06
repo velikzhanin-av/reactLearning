@@ -10,7 +10,7 @@
 
 .header {
     grid-area: h;
-    background-color: #1d1d1d;
+    background-color: #941515;
 }
 
 .header img {
@@ -18,13 +18,4 @@
     opacity: 0.5;
 }
 
-.nav {
-    grid-area: n;
-    background-color: #0c0c0c;
-    color: lightgrey;
-}
 
-.content {
-    grid-area: c;
-    background-color: blueviolet;
-}

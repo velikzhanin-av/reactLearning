@@ -1,14 +1,23 @@
+import styles from './Profile.module.css'
+
 const Profile = () => {
     return (
-        <div className="content">
+        <div className={styles.content}>
             Main content
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            qwdqwfwf
+            <div className="posts">
+                <div className={styles.item}>
+                    post1
+                </div>
+                <div className={styles.item}>
+                    post2
+                </div>
+                <div className={styles.item}>
+                    post3
+                </div>
+                <div className={styles.item}>
+                    post4
+                </div>
+            </div>
         </div>
     )
 }

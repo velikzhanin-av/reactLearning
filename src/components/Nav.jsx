@@ -1,10 +1,12 @@
+import styles from './Nav.module.css'
+
 const Nav = () => {
     return (
-        <nav className="nav">
+        <nav className={styles.nav}>
             <div>
                 Profile
             </div>
-            <div>
+            <div className={styles.item}>
                 Messages
             </div>
             <div>
