@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import './components/Header'
-import Header from "./components/Header";
-import Nav from "./components/Nav";
-import Profile from "./components/Profile";
+import './components/Header/Header'
+import Header from "./components/Header/Header";
+import Nav from "./components/Nav/Nav";
+import Profile from "./components/Profile/Profile";
 
 const App = () => {
     return (<div className="app-wrapper">
