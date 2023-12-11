@@ -6,7 +6,7 @@ const MyPosts = () => {
             <textarea></textarea>
             <button>Send</button>
             <Posts/>
-            <Posts text='Пиздец блядь!'/>
+            <Posts text='Всем привет!'/>
             <Posts/>
             <Posts/>
             <Posts/>
