@@ -1,11 +1,10 @@
 .nav {
     grid-area: n;
-    background-color: lightgrey;
+    background-color: #1D1729;
     padding: 20px;
 }
 
 .item a {
-    color: white;
     color: white;
     text-decoration: none;
     font-size: 30px;
@@ -13,7 +12,7 @@
 }
 
 a.active {
-    color: #7907fd;
+    color: #5F2DDE;
 }
 
 a:hover {

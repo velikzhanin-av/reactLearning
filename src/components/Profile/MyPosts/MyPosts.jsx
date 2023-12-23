@@ -1,17 +1,15 @@
 import Posts from "./Posts/Posts";
+import styles from './MyPosts.module.css'
 
 const MyPosts = () => {
     return (
         <div>
             <textarea></textarea>
             <button>Send</button>
-            <Posts/>
             <Posts text='Всем привет!'/>
-            <Posts/>
-            <Posts/>
-            <Posts/>
-            <Posts/>
-            <Posts/>
+            <Posts text='Всем привет!'/>
+            <Posts text='Всем привет!'/>
+            <Posts text='Всем привет!'/>
         </div>
 
     )

@@ -1,3 +1,26 @@
-.div {
+.wrapper {
     color: cyan;
+    display: grid;
+    grid-template-areas: "n t";
+    grid-template-columns: 2fr 10fr;
+    padding: 20px;
+}
+
+.chatsName {
+    color: white;
+    opacity: 0.8;
+    grid-area: n;
+    font-size: 30px;
+}
+
+.chatsText {
+    color: white;
+    opacity: 0.8;
+    grid-area: t;
+    font-size: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
