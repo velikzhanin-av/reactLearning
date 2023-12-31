@@ -11,6 +11,13 @@ const MessagesItem = (props) => {
     )
 }
 
+const MessagesText = (props) => {
+    return (
+        <div>
+            {props.text}
+        </div>
+    )
+}
 
 const Messages = (props) => {
     return (
@@ -24,24 +31,13 @@ const Messages = (props) => {
                 <MessagesItem name="Mama" id="6"/>
             </div>
             <div className={styles.chatsText}>
-                <div>
-                    Hi
-                </div>
-                <div>
-                    Hi
-                </div>
-                <div>
-                    Hi
-                </div>
-                <div>
-                    Hi
-                </div>
-                <div>
-                    Hi
-                </div>
-                <div>
-                    Hi
-                </div>
+                <MessagesText text="Hi!"/>
+                <MessagesText text="How are you?"/>
+                <MessagesText text="Hi"/>
+                <MessagesText text="How are you?"/>
+                <MessagesText text="Hi"/>
+                <MessagesText text="How are you?"/>
+
             </div>
         </div>
 

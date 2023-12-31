@@ -3,15 +3,21 @@ import styles from './MyPosts.module.css'
 
 const MyPosts = () => {
     return (
-        <div>
-            <textarea></textarea>
-            <button>Send</button>
-            <Posts text='Всем привет!'/>
-            <Posts text='Всем привет!'/>
-            <Posts text='Всем привет!'/>
-            <Posts text='Всем привет!'/>
+        <div className={styles.postsBlock}>
+            <div>
+                <textarea></textarea>
+            </div>
+            <div>
+                <button>Send</button>
+                <div/>
+                <div className={styles.posts}>
+                    <Posts text='Всем привет!'/>
+                    <Posts text='Всем привет!'/>
+                    <Posts text='Всем привет!'/>
+                    <Posts text='Всем привет!'/>
+                </div>
+            </div>
         </div>
-
     )
 }
 

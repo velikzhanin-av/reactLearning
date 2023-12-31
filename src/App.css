@@ -4,8 +4,8 @@
     "h h"
     "n c"
     "f f";
-    grid-template-rows: 60px 1fr 40px;
-    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 1fr 10fr 0.7fr;
+    grid-template-columns: 1.2fr 10fr;
     grid-gap: 7px;
     height: 100vh;
 }

@@ -6,7 +6,7 @@ const Profile = () => {
         <div className={styles.content}>
             <img src='https://35photo.pro/photos_main/642/3212849.jpg'/>
             <div>
-                Main content
+                <h3>My posts</h3>
             </div>
             <MyPosts/>
         </div>
