@@ -20,24 +20,41 @@ const MessagesText = (props) => {
 }
 
 const Messages = (props) => {
+    let users = [
+        "Viola",
+        "Max",
+        "Voznikas",
+        "Sergey",
+        "Mitrofanov",
+        "Mama",
+    ]
+
+    let messages = [
+        "Hi",
+        "How are you?",
+        "Hi",
+        "How are you?",
+        "Hi",
+        "How are you?",
+    ]
+
+    let i = 0
+    let MessagesItems = users.map((item) => {
+        i++
+        return <MessagesItem name={item} id={i}/>
+    })
+
+    let MessagesTexts = messages.map((message) => {
+        return <MessagesText text={message}/>
+    })
+
     return (
         <div className={styles.wrapper}>
             <div className={styles.chatsName}>
-                <MessagesItem name="Viola" id="1"/>
-                <MessagesItem name="Max" id="2"/>
-                <MessagesItem name="Voznikas" id="3"/>
-                <MessagesItem name="Sergey" id="4"/>
-                <MessagesItem name="Mitrofanov" id="5"/>
-                <MessagesItem name="Mama" id="6"/>
+                {MessagesItems}
             </div>
             <div className={styles.chatsText}>
-                <MessagesText text="Hi!"/>
-                <MessagesText text="How are you?"/>
-                <MessagesText text="Hi"/>
-                <MessagesText text="How are you?"/>
-                <MessagesText text="Hi"/>
-                <MessagesText text="How are you?"/>
-
+                {MessagesTexts}
             </div>
         </div>
 
