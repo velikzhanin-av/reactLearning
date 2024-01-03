@@ -1,50 +1,19 @@
 import styles from './Messages.module.css'
 import {NavLink} from "react-router-dom";
+import MessagesItem from "./MessagesItem/MessagesItem";
+import MessagesText from "./MessagesText/MessagesText";
 
-
-const MessagesItem = (props) => {
-    let url = `/messages/${props.id}`
-    return (
-        <div>
-            <NavLink to={url}>{props.name}</NavLink>
-        </div>
-    )
-}
-
-const MessagesText = (props) => {
-    return (
-        <div>
-            {props.text}
-        </div>
-    )
-}
 
 const Messages = (props) => {
-    let users = [
-        "Viola",
-        "Max",
-        "Voznikas",
-        "Sergey",
-        "Mitrofanov",
-        "Mama",
-    ]
 
-    let messages = [
-        "Hi",
-        "How are you?",
-        "Hi",
-        "How are you?",
-        "Hi",
-        "How are you?",
-    ]
 
     let i = 0
-    let MessagesItems = users.map((item) => {
+    let MessagesItems = props.messages.users.map((item) => {
         i++
         return <MessagesItem name={item} id={i}/>
     })
 
-    let MessagesTexts = messages.map((message) => {
+    let MessagesTexts = props.messages.messagesText.map((message) => {
         return <MessagesText text={message}/>
     })
 
