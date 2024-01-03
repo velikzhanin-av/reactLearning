@@ -3,36 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import state from './redux/state';
 
-let profile = [
-    {"text": "Hi. It is my first post", "likes": 12},
-    {"text": "Hi all", "likes": 2},
-    {"text": "I love javascript and react", "likes": 11}
-]
-
-let messages = {
-    users: [
-        "Viola",
-        "Max",
-        "Voznikas",
-        "Sergey",
-        "Mitrofanov",
-        "Mama",
-    ],
-    messagesText: [
-        "Hi",
-        "How are you?",
-        "Hi",
-        "How are you?",
-        "Hi",
-        "How are you?",
-    ]
-}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
-        <App profile={profile} messages={messages}/>
+        <App state={state}/>
     </React.StrictMode>
 );
 
