@@ -1,6 +1,6 @@
-.item {
+.item span{
     color: white;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .item img {
