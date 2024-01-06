@@ -44,8 +44,7 @@ export const addPosts = (text) => {
 }
 
 export const updateTextPosts = (text) => {
-    let newText = text
-    state.profile.textarea = newText
+    state.profile.textarea = text
     rerender(state)
 }
 
