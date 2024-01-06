@@ -1,5 +1,6 @@
 import styles from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
+import {addPosts, update, updateTextPosts} from "../../redux/state";
 
 const Profile = (props) => {
     return (
@@ -8,7 +9,7 @@ const Profile = (props) => {
             <div>
                 <h3>My posts</h3>
             </div>
-            <MyPosts texts={props.profile}/>
+            <MyPosts myPosts={props.profile} addPosts={props.addPosts} updateTextPosts={props.updateTextPosts}/>
         </div>
     )
 }
