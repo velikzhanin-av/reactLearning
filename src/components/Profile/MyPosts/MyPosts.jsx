@@ -10,10 +10,10 @@ const MyPosts = (props) => {
     let postNewElement = React.createRef()
     let addPosts = () => {
         let text = postNewElement.current.value
-        props.addPosts(text)
+        props.store.addPosts(text)
     }
     let updateTextPosts = () => {
-        props.updateTextPosts(postNewElement.current.value)
+        props.store.updateTextPosts(postNewElement.current.value)
     }
 
 
