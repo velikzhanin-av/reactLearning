@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import state, {store} from "./redux/state";
+import {store} from "./redux/state";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,7 +15,7 @@ export let rerender = (state) => {
     );
 }
 
-rerender(state)
+rerender(store.getState())
 
 store.subscribe(rerender)
 
