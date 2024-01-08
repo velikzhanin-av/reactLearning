@@ -1,3 +1,9 @@
+const ADD_POSTS = "ADD_POSTS"
+const UPDATE_TEXT_POSTS = "UPDATE_TEXT_POSTS"
+
+export const addPostsActionCreator = (text) => ({type: ADD_POSTS, text: text})
+export const updateTextPostsActionCreator = (text) => ({type: UPDATE_TEXT_POSTS, text: text})
+
 export let store = {
     _state: {
         profile: {
@@ -37,12 +43,12 @@ export let store = {
         this.rerender = observer
     },
     dispatch(action) {
-        if (action.type === "addPosts") {
+        if (action.type === ADD_POSTS) {
             let newPost = {text: action.text, likes: 0}
             this._state.profile.posts.push(newPost)
             this._state.profile.textarea = ""
             this.rerender(this._state)
-        } else if (action.type === "updateTextPosts") {
+        } else if (action.type === UPDATE_TEXT_POSTS) {
             this._state.profile.textarea = action.text
             this.rerender(this._state)
         }
