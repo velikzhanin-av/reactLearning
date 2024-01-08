@@ -1,6 +1,7 @@
 import Posts from "./Posts/Posts";
 import styles from './MyPosts.module.css'
 import React from "react";
+import {addPostsActionCreator, updateTextPostsActionCreator} from "../../../redux/state";
 
 const MyPosts = (props) => {
     let PostsTexts = props.myPosts.posts.map(text => {
@@ -10,12 +11,14 @@ const MyPosts = (props) => {
     let postNewElement = React.createRef()
     let addPosts = () => {
         let text = postNewElement.current.value
-        props.addPosts(text)
-    }
-    let updateTextPosts = () => {
-        props.updateTextPosts(postNewElement.current.value)
+        let action = addPostsActionCreator(text)
+        props.store.dispatch(action)
     }
 
+    let updateTextPosts = () => {
+        let action = updateTextPostsActionCreator(postNewElement.current.value)
+        props.store.dispatch(action)
+    }
 
     return (
         <div className={styles.postsBlock}>
