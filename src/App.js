@@ -10,7 +10,7 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import Footer from "./components/Footer/Footer";
-import {addPosts, updateTextPosts} from "./redux/state";
+import MessagesText from "./components/Messages/MessagesText/MessagesText";
 
 const App = (props) => {
     return (
@@ -23,6 +23,8 @@ const App = (props) => {
                         <Route path='/profile'
                                element={<Profile profile={props.state.profile} store={props.store}/>}/>
                         <Route path='/messages' element={<Messages messages={props.state.messages}/>}/>
+                        <Route path={`/messages/1`}
+                               element={<MessagesText text="qwerty"/>}/>
                         <Route path='/news' element={<News/>}/>
                         <Route path='/settings' element={<Settings/>}/>
                         <Route path='/music' element={<Music/>}/>

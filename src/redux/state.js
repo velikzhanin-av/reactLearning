@@ -16,20 +16,20 @@ export let store = {
         },
         messages: {
             users: [
-                "Viola",
-                "Max",
-                "Voznikas",
-                "Sergey",
-                "Mitrofanov",
-                "Mama",
+                {user: "Viola", id: 1},
+                {user: "Max", id: 2},
+                {user: "Voznikas", id: 3},
+                {user: "Sergey", id: 4},
+                {user: "Viola", id: 5},
+                {user: "Mama", id: 6},
             ],
             messagesText: [
-                "Hi",
-                "How are you?",
-                "Hi",
-                "How are you?",
-                "Hi",
-                "How are you?",
+                {text: "How are you?", id: 1},
+                {text: "Hi", id: 2},
+                {text: "How are you?", id: 3},
+                {text: "Hi", id: 4},
+                {text: "How are you?", id: 5},
+                {text: "Hi", id: 6},
             ]
         }
     },

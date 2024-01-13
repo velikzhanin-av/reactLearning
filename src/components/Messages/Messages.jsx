@@ -7,14 +7,12 @@ import MessagesText from "./MessagesText/MessagesText";
 const Messages = (props) => {
 
 
-    let i = 0
     let MessagesItems = props.messages.users.map((item) => {
-        i++
-        return <MessagesItem name={item} id={i}/>
+        return <MessagesItem name={item.user} id={item.id}/>
     })
 
     let MessagesTexts = props.messages.messagesText.map((message) => {
-        return <MessagesText text={message}/>
+        return <MessagesText text={message.text} id={message.id}/>
     })
 
     return (
