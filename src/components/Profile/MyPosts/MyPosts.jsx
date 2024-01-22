@@ -13,6 +13,7 @@ const MyPosts = (props) => {
         let text = postNewElement.current.value
         let action = addPostsActionCreator(text)
         props.store.dispatch(action)
+        postNewElement.current.value = props.store._state.profile.textarea
     }
 
     let updateTextPosts = () => {
@@ -23,7 +24,7 @@ const MyPosts = (props) => {
     return (
         <div className={styles.postsBlock}>
             <div>
-                <textarea onChange={updateTextPosts} ref={postNewElement}/>
+                <textarea onChange={updateTextPosts} ref={postNewElement}></textarea>
             </div>
             <div>
                 <button onClick={addPosts}>Send</button>

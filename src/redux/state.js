@@ -12,7 +12,7 @@ export let store = {
                 {text: "Hi all", "likes": 2},
                 {text: "I love javascript and react", "likes": 11}
             ],
-            textarea: "",
+            textarea: "11111111111111111",
         },
         messages: {
             users: [
